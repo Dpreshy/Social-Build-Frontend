@@ -1,15 +1,14 @@
 import React from "react"
-import MySignUp from './components/ClassWork/MySignUp'
-import Header from './components/Header/Example/Header'
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Header from "./components/Headers/Header"
+import {BrowserRouter} from 'react-router-dom'
+import HomeScreen from "./components/Home/HomeScreen"
 const App = ()=>{
   return(
-    // <BrowserRouter>
-    // <Routes>
-    //   <Route  to='/' element={<SignUp/>}/>
-    // </Routes>
-    // </BrowserRouter>
+    <BrowserRouter>
     <Header />
+<HomeScreen/>
+ 
+    </BrowserRouter>
     )
 }
 export default App
