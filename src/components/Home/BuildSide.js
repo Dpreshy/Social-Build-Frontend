@@ -4,7 +4,9 @@ import styled from "styled-components"
 const BuildSide = () => {
   return (
     <div>
-      Hello
+      
+     
+      
     </div>
   )
 }

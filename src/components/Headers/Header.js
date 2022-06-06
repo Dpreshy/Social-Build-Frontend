@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from "styled-components"
 import {BsSearch} from "react-icons/bs"
-import {AiFillHome } from "react-icons/ai"
+import {AiFillHome, AiOutlineHeart } from "react-icons/ai"
 // import {AiFillHome } from "react-icons/ai"
 import {BiAddToQueue} from "react-icons/bi"
-// import {AiFillHome } from "react-icons/ai"
+import {FcLike } from "react-icons/fc"
 
 
 
@@ -25,7 +25,7 @@ const Header = () => {
         <Hold>
             <HomeIcon/>
             <PostIcon/>
-            <HomeIcon/>
+            <LoveIcon/>
 
             <Image  src='/images/1.jpg'/>
         </Hold>
@@ -41,7 +41,8 @@ export default Header
 
 const Hold = styled.div`
 display:flex ;
-
+align-items: center ;
+height:100%
 `
 
 
@@ -96,16 +97,16 @@ margin: 0 10px ;
 color:#000000 ;
 cursor: pointer ;
 `
-// const PostIcon = styled(BiAddToQueue)`
-// font-size:25px ;
-// margin: 0 10px ;
-// color:#000000 ;
-// cursor: pointer ;
-// `
+const LoveIcon = styled(AiOutlineHeart)`
+font-size:25px ;
+margin: 0 10px ;
+color:#000000 ;
+cursor: pointer ;
+`
 
 
 const Image = styled.img`
-width:50px ;height:50px;
+width:40px ;height:40px;
 border-radius: 50%;
 object-fit: cover;
 /* background-color:red; */
@@ -128,7 +129,7 @@ display:flex ;
 justify-content: center ;
 border-bottom:1px solid silver ;
 position:fixed ;
-background-color:red;
+background-color:white;
 `
 
 
