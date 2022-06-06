@@ -128,7 +128,7 @@ display:flex ;
 justify-content: center ;
 border-bottom:1px solid silver ;
 position:fixed ;
-background-color:white;
+background-color:red;
 `
 
 
