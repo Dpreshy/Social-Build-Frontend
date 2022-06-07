@@ -58,7 +58,7 @@ const Container = styled.div`
     width: 100%;
     min-height: calc(100vh - 70px);
     height: 100%;
-    background-color: lightgray;
+    background-color: #FAFAFA;
     display: flex;
     /* align-items: center; */
     justify-content: center;

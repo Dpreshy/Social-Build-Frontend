@@ -5,7 +5,10 @@ import {AiFillHome, AiOutlineHeart } from "react-icons/ai"
 // import {AiFillHome } from "react-icons/ai"
 import {BiAddToQueue} from "react-icons/bi"
 import {FcLike } from "react-icons/fc"
+import {MdOutlineShareLocation } from "react-icons/md"
 
+import { BiMessageRoundedDots } from "react-icons/bi";
+// import { Link } from 'react-router-dom'?
 
 
 
@@ -24,10 +27,17 @@ const Header = () => {
         </Hold>
         <Hold>
             <HomeIcon/>
+            <MessageIcon />
+
             <PostIcon/>
+            <FavIcon/>
+
             <LoveIcon/>
 
-            <Image  src='/images/1.jpg'/>
+
+<Image  src='/images/4.jpg'/>
+
+
         </Hold>
 
             </Wrapper>
@@ -42,7 +52,8 @@ export default Header
 const Hold = styled.div`
 display:flex ;
 align-items: center ;
-height:100%
+/* height:100% */
+margin-right:80px;
 `
 
 
@@ -60,8 +71,8 @@ align-items: center ;
 width:350px ;
 height: 40px;
 border-radius: 5px ;
-background-color: lightgray;
-
+background-color: #EFEFEF;
+/* margin-left:150px; */
 `
 
 
@@ -86,19 +97,31 @@ font-size: 20px;
 
 
 const HomeIcon = styled(AiFillHome)`
-font-size:25px ;
+font-size:27px ;
 margin: 0 10px ;
 color:#000000 ;
 cursor: pointer ;
 `
 const PostIcon = styled(BiAddToQueue)`
-font-size:25px ;
+font-size:27px ;
 margin: 0 10px ;
 color:#000000 ;
 cursor: pointer ;
 `
 const LoveIcon = styled(AiOutlineHeart)`
-font-size:25px ;
+font-size:27px ;
+margin: 0 10px ;
+color:#000000 ;
+cursor: pointer ;
+`
+const FavIcon = styled(MdOutlineShareLocation)`
+font-size:27px ;
+margin: 0 10px ;
+color:#000000 ;
+cursor: pointer ;
+`
+const MessageIcon = styled(BiMessageRoundedDots)`
+font-size:27px ;
 margin: 0 10px ;
 color:#000000 ;
 cursor: pointer ;
@@ -116,7 +139,7 @@ object-fit: cover;
 const Wrapper = styled.div`
 width:90% ;
 display:flex ;
-justify-content: space-between ;
+justify-content: space-around ;
 align-items: center ;
 height:100% ;
 `
@@ -128,6 +151,7 @@ height:70px ;
 display:flex ;
 justify-content: center ;
 border-bottom:1px solid silver ;
+align-items: center ;
 position:fixed ;
 background-color:white;
 `
