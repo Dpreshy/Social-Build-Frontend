@@ -108,6 +108,17 @@ A lady in Tech, Love and light💞💞
 						</Title>
 					</NavHolder>
 				</Nav>
+
+                <PostImages>
+                    <ImagesPost src="/images/3.jpg"/>
+                    <ImagesPost src="/images/2.jpg"/>
+                    <ImagesPost src="/images/4.png"/>
+                    <ImagesPost src="/images/2.jpg"/>
+                    <ImagesPost src="/images/5.png"/>
+                    <ImagesPost src="/images/3.jpg"/>
+
+
+                </PostImages>
 			</Wrapper>
 		</Container>
 	);
@@ -134,6 +145,20 @@ const NavIcon = styled(BsGrid3X3)`
 	font-size: 10px;
 	margin-right: 3px;
 `;
+const PostImages = styled.div`
+width:100% ;
+justify-content:space-between;
+flex-wrap:wrap ;
+display: flex;
+
+
+`
+const ImagesPost = styled.img`
+width:250px ;
+height: 250px;
+object-fit: cover;
+
+`
 
 const NavHolder = styled.div`
 	display: flex;
@@ -245,6 +270,7 @@ const Top = styled.div`
 const Wrapper = styled.div`
 	width: 768px;
 	background-color: white;
+    
 `;
 
 const Container = styled.div`
@@ -255,4 +281,5 @@ const Container = styled.div`
 	background-color: #fafafa;
 	height: 100%;
 	min-height: calc(100vh - 70px);
+
 `;
